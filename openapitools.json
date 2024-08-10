@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "7.6.0",
+    "generators": {
+      "api-v1": {
+        "generatorName": "typescript-axios",
+        "inputSpec": "https://daftarfile.eridanus.ir/fa/api/schema",
+        "output": "#{cwd}/src/core/open-api",
+        "additionalProperties": {
+          "supportsES6": true,
+          "useSingleRequestParameter": true,
+          "withSeparateModelsAndApi": true,
+          "apiPackage": "server-api",
+          "modelPackage": "server-model",
+          "paramNaming": "original"
+        }
+      }
+    }
+  }
+}

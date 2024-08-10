@@ -1,0 +1,75 @@
+// ------------------------------ Mui Dialog & Modal --------------------------------
+.MuiMenu-root.MuiModal-root,
+.MuiDialog-root,
+.base-Popper-root {
+  z-index: 10000000 !important; // the high z-index puts mui elements over react-modal-sheet
+}
+
+// ------------------------------ inputs placeholder --------------------------------
+.MuiInputBase-input {
+  &::placeholder {
+    font-size: 15px !important;
+  }
+}
+
+// ------------------------------ Date Picker --------------------------------
+.MuiDateCalendar-root {
+  height: 300px !important;
+}
+
+.MuiPickersCalendarHeader-root .MuiPickersCalendarHeader-labelContainer {
+  font-size: 14px;
+}
+
+.MuiPickersYear-yearButton {
+  font-size: 14px;
+}
+
+.MuiPickersLayout-actionBar {
+  display: flex;
+  justify-content: center !important;
+  button {
+    font-size: 12px;
+  }
+}
+
+//  ------------------------------- otp-input ----------------------------------
+
+.otp-input-container {
+  input {
+    &:focus-visible {
+      outline: none;
+      border: 1px solid var(--palette-info) !important;
+      box-shadow: 0 0 4px 0 var(--palette-info) !important;
+    }
+  }
+}
+
+// -------------------------- react-toastify customization ----------------------------------
+
+// references: https://fkhadra.github.io/react-toastify/how-to-style/
+// references: https://stackoverflow.com/questions/60849448/how-can-i-change-the-styles-of-the-react-toastify-popup-message
+
+.Toastify__toast--info {
+  background: var(--palette-info) !important;
+}
+.Toastify__toast--success {
+  background: var(--palette-success) !important;
+}
+.Toastify__toast--error {
+  background: var(--palette-error) !important;
+}
+.Toastify__toast--warning {
+  background: var(--palette-warning) !important;
+}
+.Toastify__toast-body {
+  font-size: 0.875rem !important;
+}
+@media only screen and (max-width: 480px) {
+  .Toastify__toast-container {
+    width: var(--toastify-toast-width) !important;
+    bottom: var(--toastify-toast-bottom) !important;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+}

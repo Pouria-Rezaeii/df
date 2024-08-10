@@ -1,0 +1,16 @@
+:root {
+  --temporary-application-max-width-before-adding-desktop-version: 500px;
+  --container-padding-x: 16px;
+  --container-max-width: 1256px; // 12*80(column width) + 11*24(gap) + 2*16(padding left & right)
+  --border-radius: 4px;
+  --header-height: 70px;
+  --header-padding-x: 15px;
+  --header-inner-shadow: inset 0px 0px 12px 0px #d9d9d9bb;
+  --dashboard-layout-content-box-padding-t: 12px;
+  --dashboard-layout-content-box-padding-b: 20px;
+
+  --palette-info: #2372dd;
+  --palette-success: #00966d;
+  --palette-warning: #a9791c;
+  --palette-error: #ed2e2e;
+}
